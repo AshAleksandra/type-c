@@ -1,7 +1,6 @@
 #ifndef TC_COMPILE
 #define TC_COMPILE
 
-void compile(char const *filename);
-char read_file(char const *filename);
+void compile_file(const char* filename);
 
 #endif
