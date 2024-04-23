@@ -22,6 +22,9 @@ all: ${OBJECTS}
 ./build/lex_process.o: ./src/lex_process.c
 	gcc ./src/lex_process.c ${INCLUDES} -o ./build/lex_process.o -g -c
 
+asm:
+	gcc asm/*.c -o as
+
 clean:
 	rm ./main
 	rm -rf ${OBJECTS}
