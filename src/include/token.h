@@ -2,13 +2,17 @@
 #include <string>
 
 enum token{
-    TOKEN_EOF = 0,
-    TOKEN_NUMBER = 1,
-    TOKEN_ID = 2,
-    TOKEN_STATEMENT = 3
+    TOKEN_EOF,
+    TOKEN_NUMBER,
+    TOKEN_ID,
+    TOKEN_STATEMENT,
+    TOKEN_LPAREN,
+    TOKEN_RPAREN,
+    TOKEN_LBRACE,
+    TOKEN_RBRACE
 };
 
-typedef struct {
+typedef struct TOKEN_STRUCT {
     std::string value;
     token type;
 } token_T;
