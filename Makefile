@@ -1,5 +1,5 @@
 gcc:
-	gcc src/*.c -o main
+	gcc src/*.cc -lstdc++ -o main
 
 clean:
 	rm ./main
